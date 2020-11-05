@@ -1,0 +1,4 @@
+1) INSERT into pracownicy values (null,'Joanna','Dobrowolska',2);
+2) SELECT imie,nazwisko FROM `pracownicy` WHERE stanowisko like 3;
+3) select id,nazwa from dania where cena < 25 
+4) UPDATE dania set cena = cena+1 where typ like 4 

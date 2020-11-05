@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Galeria zdjęć</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="styl5.css"/>
+    </head>
+    <body>
+        <div class="baner">
+            <h1>Zdjęcia psów</h1>
+        </div>
+        <div class="lewy">
+            <h2>Kategorie</h2>
+            <ul>
+                <li><a href="psy.html">Psy</a></li>
+                <li><a href="koty.html">Koty</a></li>
+                <li>Gryzonie</li>
+                <li>Jaszczurki</li>
+                <li>Inne zdjęcia</li>
+            </ul>
+            <h4><a href="index.html">Powrót do strony głównej</a></h4>
+        </div>
+        <script>
+            function zdjecie(a){
+                document.getElementById(a).src="materialy/"+a+".jpg";
+                document.getElementById('pies').src="materialy/"+a+".jpg";
+            }
+            function n(a){
+                document.getElementById(a).src="materialy/"+a+"-szary.jpg";
+            }
+            function w(a){
+                document.getElementById(a).src="materialy/"+a+".jpg";
+            }
+        </script>
+        <div class="prawy1">
+            <h1>Wybierz zdjęcie</h1>
+            <img src="materialy/pies1.jpg" id="pies1" alt="pies1" onclick="zdjecie('pies1')" onmouseover="n('pies1')" onmouseout="w('pies1')"/>
+            <img src="materialy/pies2.jpg" id="pies2" alt="pies2" onclick="zdjecie('pies2')" onmouseover="n('pies2')" onmouseout="w('pies2')"/>
+            <img src="materialy/pies3.jpg" id="pies3" alt="pies3" onclick="zdjecie('pies3')" onmouseover="n('pies3')" onmouseout="w('pies3')"/>
+        </div>
+        <div class="prawy2">
+            <p><img src="materialy/pies1.jpg" alt="pies-duży" id="pies"/></p>
+        </div>
+        <div class="stopka">Galerię zdjęć opracował <i>00000000000</i></div>
+    </body>
+</html>

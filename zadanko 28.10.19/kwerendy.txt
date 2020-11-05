@@ -1,0 +1,3 @@
+zapytanie 1: select id,model,kolor from Samochody WHERE marka like 'Toyota' and rocznik like 2014 ;
+zapytanie 2: select id,marka,model,rocznik from Samochody
+zapytanie 3: SELECT Samochody_id,model,telefon from samochody as s inner join zamowienia as z on s.id=z.Samochody_id 

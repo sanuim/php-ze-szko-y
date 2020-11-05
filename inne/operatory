@@ -1,0 +1,44 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+
+</head>
+<body>
+<?php
+$a=1;
+$b=2;
+$c=3;
+$d=4;
+
+$dod=$a + $b;
+$mno=$c * $d;
+$and=$a & $b;
+$or=$c | $d;
+$and2=$a and $b;
+$or2=$c or $d;
+$true1=$a <> $b;
+$true2=$c != $d;
+
+ echo "zmienne: ".$a.", ".$b.", ".$c.", ".$d;
+ echo "<br/>";
+ echo "dodawanie pierwszej z drugą: ".$dod;
+ echo "<br/>";
+ echo "mnożenie trzeciej z czwartą: ".$mno;
+ 
+ echo "<br/>"."<br/>";
+ echo "bitowe operacje teraz, and: ".$and;
+ echo "<br/>";
+ echo "or: ".$or;
+ 
+ echo "<br/>"."<br/>";
+ echo "logiczne operacje teraz, and: ".$and2;
+ echo "<br/>";
+ echo "or: ".$or2;
+ 
+ echo "<br/>"."<br/>";
+ echo "teraz porównania: ";
+ echo $true1."<br/>";
+ echo $true2.
+?>
+</body>
+</html>
